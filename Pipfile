@@ -10,6 +10,7 @@ numpy = "*"
 tensorflow = "*"
 keras = "*"
 gunicorn = "*"
+flask-cors = "==3.0.6"
 
 [dev-packages]
 
