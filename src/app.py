@@ -5,9 +5,10 @@ from .cnn import predict_digit
 from keras.models import load_model
 import cv2
 import numpy as np
-
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app,origins="*")
 app.config['files'] = os.path.join(os.path.dirname(__file__), 'files')
 
 
