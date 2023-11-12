@@ -1,7 +1,6 @@
 import os
 from werkzeug.utils import secure_filename
 from flask import Flask, render_template, request
-from .cnn import predict_digit
 from keras.models import load_model
 import cv2
 import numpy as np
