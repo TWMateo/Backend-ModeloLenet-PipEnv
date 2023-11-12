@@ -37,7 +37,7 @@ form.addEventListener('submit', e => {
 
 	fetch('/predict', { method: 'POST', body: request })
 		.then(res => res.json())
-		.then(({ predicted_number }) => {
-			result.innerHTML = `El dígito detectado es: ${predicted_number}`;
+		.then(({ prediccion }) => {
+			result.innerHTML = `El dígito detectado es: ${prediccion}`;
 		});
 });

@@ -44,7 +44,7 @@ def predict_image():
 
     return {
         "message": "ok",
-        "predicted_number": float(prediction.argmax())
+        "prediccion": float(prediction.argmax())
     }
 
     #return prediction
