@@ -41,7 +41,6 @@ def predict_image():
     gray /= 255
 
     prediction = model.predict(gray.reshape(1, 28, 28, 1))
-    print(prediction)
     return {
         "message": "ok",
         "prediccion": float(prediction.argmax())
