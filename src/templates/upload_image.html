@@ -1,0 +1,25 @@
+{% extends "page_layout.html" %}
+
+{% block content %}
+
+<h2 class="title">Suba una imagen para detectar el dígito.</h2>
+
+<form>
+  <div class="box">
+    <input type="file" id="file-input" name="image" />
+  </div>
+
+  <div class="box">
+    <div class="show-img"></div>
+  </div>
+
+  <div class="box">
+    <p class="result"></p>
+  </div>
+
+  <div class="box">
+    <button type="submit" class="hide">Detectar dígito</button>
+  </div>
+</form>
+
+{% endblock %}
