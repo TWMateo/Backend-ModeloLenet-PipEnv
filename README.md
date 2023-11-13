@@ -1,32 +1,32 @@
-# Digit classification with convolutional neural network CNN
+# Clasificación de digitos con una CNN
 
-Simple digit classification with convolutional neural network CNN.
+Red neuronal convolucional CNN
 
 ## Setup
-1. First, configure the environment variables:
+1. Variables de entorno:
 ```bash
 export PIPENV_VENV_IN_PROJECT=1
 export FLASK_APP=src
 export FLASK_ENV=development
 ```
 
-2. Then, install the dependencies:
+2. Instalación de las dependencias:
 ```bash
 pipenv install
 ```
 
-3. Run the application:
+3. Ejecucion aplicación:
 ```bash
 pipenv run flask run --debug
 ```
 
 ## Production
-Consider run this script
+Script
 ```bash
 ./start.sh
 ```
 
-Then, run the app with:
+Ejecución de la aplicación
 ```bash
 # Run the app
 pipenv run gunicorn -w 4 'src:app'
